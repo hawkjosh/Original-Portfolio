@@ -1,0 +1,185 @@
+* {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+  padding: 5px;
+}
+
+header {
+  display: flex;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  width: 25%;
+  background-color: #070B47;
+}
+
+nav {
+  width: 75%;
+  background-color: #9F9F9F;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 25px 10px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  text-decoration: none;
+  color: #070B47;
+  font-size: 2rem;
+}
+
+nav ul li a:hover {
+  background-color: #070B47;
+  color: white;
+  transition: background-color 0.5s;
+  border-radius: 10px;
+  padding: 25px 10px;
+}
+
+.about {
+  display: flex;
+}
+
+.profile-photo {
+  width: 25%;
+  margin: 0;
+  padding-left: 0
+}
+
+.about-text {
+  background-color: #536878;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.about article h2 {
+  font-size: 3rem;
+}
+
+.about article p {
+  font-size: 2rem;
+  width: 90%;
+}
+
+#work {
+  color: #070B47;
+  font-size: 3rem;
+  text-align: center;
+  margin: 25px auto;
+}
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#first-example {
+  background-color: #9F9F9F;
+  border: 1px solid #070B47;
+  border-radius: 25px;
+  height: 600px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 75%;
+  color: #070B47;
+}
+
+#first-example:hover {
+  background-color: #7C878C;
+  color: white;
+  border: 5px solid #070B47;
+  border-radius: 25px;
+  transition: background-color 0.5s;
+}
+
+.other-examples {
+  background-color: #9F9F9F;
+  border: 1px solid #070B47;
+  border-radius: 25px;
+  height: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40%;
+  color: #070B47;
+}
+
+.other-examples:hover {
+  background-color: #7C878C;
+  color: white;
+  border: 3px solid #070B47;
+  border-radius: 25px;
+  transition: background-color 0.5s;
+}
+
+#first-example p {
+  font-size: 1.75rem;
+}
+
+.other-examples p {
+  font-size: 1.1rem;
+}
+
+footer {
+  display: flex;
+  margin-top: 50px;
+}
+
+footer h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  color: #070B47;
+  font-size: 3rem;
+  background-color: #9F9F9F;
+}
+
+footer ul {
+  background-color: #070B47;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  list-style-type: none;
+  width: 75%;
+}
+
+footer ul li {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+footer ul li a:link, footer ul li a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
