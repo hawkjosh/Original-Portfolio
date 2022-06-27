@@ -6,7 +6,7 @@ In this challenge, I created a portfolio webpage to introduce myself and showcas
 
 ## Screenshot
 
-![Screenshot of the deployed web application](.\assets\images\module2_webpage_screenshot.png)
+![Screenshot of the deployed web application](./Assets/images/module2_webpage_screenshot.png)
 
 ## Link
 
