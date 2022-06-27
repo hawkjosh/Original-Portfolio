@@ -10,4 +10,4 @@ In this challenge, I created a portfolio webpage to introduce myself and showcas
 
 ## Link
 
-To view the deployed website, [CLICK HERE](https://hawkjosh.github.io/module2-assignment/).
+To view the deployed website, [CLICK HERE](https://hawkjosh.github.io/module2-portfolio-challenge/).
