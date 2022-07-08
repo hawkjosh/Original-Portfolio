@@ -10,10 +10,29 @@
       <h1>My Portfolio</h1>
       <nav>
         <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#work">Work Samples</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-          <li><a href="./Assets/resume.pdf" target="_blank">Resume</a></li>
+          <div class="dropdown">
+            <li>About Me</li>
+            <div class="dropdown-content">
+              <a href="#about">Quick Bio</a>
+              <a href="./Assets/resume.pdf" target="_blank">My Resume</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li>Work Samples</li>
+            <div class="dropdown-content">
+              <a href="https://oz4tech.github.io/TSG-APP-Project-1/" target="_blank">Music Search App</a>
+              <a href="https://hawkjosh.github.io/module4-code-quiz-challenge/" target="_blank">Code Quiz App</a>
+              <a href="https://hawkjosh.github.io/personal-project-stopwatch/" target="_blank">Stopwatch App</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li>Contact Info</li>
+            <div class="dropdown-content">
+              <a href="mailto:hawkjosh@icloud.com" target="_blank">Email</a>
+              <a href="https://github.com/hawkjosh" target="_blank">GitHub</a>
+              <a href="https://www.linkedin.com/in/josh-hawk-6591a3230/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
         </ul>
       </nav>
     </header>
@@ -22,40 +41,31 @@
         <img class="profile-photo" src="./Assets/images/profile_photo.jpg" alt="Profile photo">
         <article class="about-text">
           <p>
-            Hello, my name is Josh Hawk. I have been an educator for the past 15 years and I recently decided to break my way into the world of tech. In order to jumpstart this career change, I've enrolled in a full stack coding boot camp through Georgia Tech. This website is where I will display the different projects I create throughout the boot camp. Feel free to reach out to me with any questions or comments by using my contact information at the bottom of the page. I hope you enjoy, and thanks for stopping by!
+            Hello, my name is Josh Hawk. I have been an educator for the past 15 years and I recently decided to forge a new path into the world of tech. In order to jumpstart this career change, I've enrolled in a full stack coding boot camp through Georgia Tech. This portfolio is where I will display the different projects I create throughout the boot camp, as well as some personal projects I do on the side. Feel free to reach out to me with any questions or comments using my contact information. I hope you enjoy, and thanks for stopping by!
           </p>
         </article>
       </section>
       <h2 id="work">Work Samples</h2>
       <section class="content">
         <figure id="first-example">
-          <img src="./Assets/images/coming_soon_transparent.png" width="90%" alt="Coming soon placeholder image" />
+          <a href="https://oz4tech.github.io/TSG-APP-Project-1/" target="_blank"><img class="ex-img" src="./Assets/images/Song Lyric Search.gif" alt="Song Lyric Search App Preview" /></a>
+          <div class="ex-title">MUSIC SEARCH APP</div>
           <p>
-            Example 1 → Brief project explanation and link to more information...
+            This web app is a simple music search tool that allows users to enter song lyrics and get back a list of songs and album artwork for matched results. The user can then click on links for each of the song results returned to either play the song with Shazam or open a YouTube music video of the song. I created this app along with two other team members as part of a collaborative group project.
           </p>
         </figure>
-        <figure class="other-examples">
-          <img src="./Assets/images/coming_soon_2_transparent.png" width="45%" alt="Coming soon placeholder image" />
+        <figure id="second-example" class="other-examples">
+          <a href="https://hawkjosh.github.io/module4-code-quiz-challenge/" target="_blank"><img class="ex-img" src="./Assets/images/Code Quiz.gif" alt="Code Quiz App Preview" /></a>
+          <div class="ex-title">CODE QUIZ APP</div>
           <p>
-            Example 2 → Brief project explanation and link to more information...
+            This web app is a timed multiple-choice quiz on JavaScript fundamentals that stores high scores. I created this app individually as a homework/challenge assignment.
           </p>
         </figure>
-        <figure class="other-examples">
-          <img src="./Assets/images/coming_soon_2_transparent.png" width="45%" alt="Coming soon placeholder image" />
+        <figure id="third-example" class="other-examples">
+          <a href="https://hawkjosh.github.io/personal-project-stopwatch/" target="_blank"><img class="ex-img" src="./Assets/images/Stopwatch.gif" alt="Stopwatch App Preview" /></a>
+          <div class="ex-title">STOPWATCH APP</div>
           <p>
-            Example 3 → Brief project explanation and link to more information...
-          </p>
-        </figure>
-        <figure class="other-examples">
-          <img src="./Assets/images/coming_soon_2_transparent.png" width="45%" alt="Coming soon placeholder image" />
-          <p>
-            Example 4 → Brief project explanation and link to more information...
-          </p>
-        </figure>
-        <figure class="other-examples">
-          <img src="./Assets/images/coming_soon_2_transparent.png" width="45%" alt="Coming soon placeholder image" />
-          <p>
-            Example 5 → Brief project explanation and link to more information...
+            This web app is a simple stopwatch with start, stop, and reset buttons. I created this app individually outside of class as a personal project.
           </p>
         </figure>
       </section>

@@ -5,6 +5,11 @@
   padding: 5px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   display: flex;
 }
@@ -33,21 +38,47 @@ nav ul {
 }
 
 nav ul li {
-  padding: 25px 10px;
-}
-
-nav ul li a:link, nav ul li a:visited {
   text-decoration: none;
   color: #070B47;
   font-size: 2rem;
+  font-weight: bolder;
+  cursor: default;
 }
 
-nav ul li a:hover {
-  background-color: #070B47;
+.dropdown {
+  border: none;
+  outline: none;
   color: white;
-  transition: background-color 0.5s;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #070B47;
+  min-width: 250px;
   border-radius: 10px;
-  padding: 25px 10px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.dropdown-content a:hover {
+  font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .about {
@@ -55,7 +86,7 @@ nav ul li a:hover {
 }
 
 .profile-photo {
-  width: 25%;
+  width: 35%;
   margin: 0;
   padding-left: 0
 }
@@ -68,11 +99,6 @@ nav ul li a:hover {
   justify-content: center;
   width: 75%;
   color: white;
-  font-size: 1.5rem;
-}
-
-.about article h2 {
-  font-size: 3rem;
 }
 
 .about article p {
@@ -87,6 +113,18 @@ nav ul li a:hover {
   margin: 25px auto;
 }
 
+.ex-title {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.ex-img {
+  width: 95%;
+  object-fit: contain;
+  border-radius: 15px;
+  border: 2px solid #070B47;
+}
+
 .content {
   display: flex;
   flex-flow: row wrap;
@@ -96,14 +134,13 @@ nav ul li a:hover {
 
 #first-example {
   background-color: #9F9F9F;
-  border: 1px solid #070B47;
   border-radius: 25px;
-  height: 600px;
+  min-height: 600px;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   width: 75%;
   color: #070B47;
 }
@@ -111,21 +148,23 @@ nav ul li a:hover {
 #first-example:hover {
   background-color: #7C878C;
   color: white;
-  border: 5px solid #070B47;
+  border: 4px solid #070B47;
   border-radius: 25px;
-  transition: background-color 0.5s;
+}
+
+#first-example:hover .ex-img {
+  border: 3px solid white;
 }
 
 .other-examples {
   background-color: #9F9F9F;
-  border: 1px solid #070B47;
   border-radius: 25px;
-  height: 400px;
+  min-height: 400px;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   width: 40%;
   color: #070B47;
 }
@@ -133,17 +172,20 @@ nav ul li a:hover {
 .other-examples:hover {
   background-color: #7C878C;
   color: white;
-  border: 3px solid #070B47;
+  border: 4px solid #070B47;
   border-radius: 25px;
-  transition: background-color 0.5s;
+}
+
+.other-examples:hover .ex-img {
+  border: 3px solid white;
 }
 
 #first-example p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .other-examples p {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 
 footer {
