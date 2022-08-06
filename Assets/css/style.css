@@ -156,6 +156,30 @@ nav ul li {
   border: 3px solid white;
 }
 
+#second-example {
+  background-color: #9F9F9F;
+  border-radius: 25px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 75%;
+  color: #070B47;
+}
+
+#second-example:hover {
+  background-color: #7C878C;
+  color: white;
+  border: 4px solid #070B47;
+  border-radius: 25px;
+}
+
+#second-example:hover .ex-img {
+  border: 3px solid white;
+}
+
 .other-examples {
   background-color: #9F9F9F;
   border-radius: 25px;
@@ -181,6 +205,10 @@ nav ul li {
 }
 
 #first-example p {
+  font-size: 1.5rem;
+}
+
+#second-example p {
   font-size: 1.5rem;
 }
 
